@@ -5,6 +5,14 @@
 </head>
 <body>
 	<h1>Home Page</h1>
+	<div>
+		<% for (var i = 0; i < resource.length; i++) { %>
+		<p>Location: <%= resource[i].location %></p>
+		<p>Address: <%= resource[i].address %></p>
+		<p>Hours: <%= resource[i].hours %></p>
+		<p>Services: <%= resource[i].services %></p>
+		<% } %>
+	</div>
 
 </body>
 </html>
